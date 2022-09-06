@@ -14,7 +14,7 @@ import { Reply } from './reply';
 export class Article {
   @PrimaryGeneratedColumn()
   @Field()
-  articleId: number;
+  id: number;
 
   @Column()
   @Field()

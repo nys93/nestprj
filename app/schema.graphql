@@ -4,7 +4,7 @@
 
 type Reply {
   articleId: Float!
-  replyId: Float!
+  id: Float!
   writer: String!
   content: String!
   registDate: String!
@@ -12,7 +12,7 @@ type Reply {
 }
 
 type Article {
-  articleId: Float!
+  id: Float!
   writer: String!
   title: String!
   content: String!
@@ -24,5 +24,5 @@ type Article {
 
 type Query {
   articles: [Article!]!
-  replies: [Article!]!
+  replies: [Reply!]!
 }

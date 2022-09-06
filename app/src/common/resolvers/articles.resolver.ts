@@ -1,8 +1,6 @@
 import { Query, Resolver } from '@nestjs/graphql';
-import { ArticlesService } from './articles.service';
-import { Article } from './entities/article';
-import { Reply } from './entities/reply';
-import { Field, ObjectType } from '@nestjs/graphql';
+import { ArticlesService } from '../services/articles.service';
+import { Article } from '../entities/article';
 
 @Resolver()
 export class ArticlesResolver {

@@ -16,7 +16,7 @@ export class Reply {
 
   @PrimaryGeneratedColumn()
   @Field()
-  replyId: number;
+  id: number;
 
   @Column()
   @Field()
