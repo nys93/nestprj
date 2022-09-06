@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Article {
+  articleId: Float!
+  writer: String!
+  title: String!
+  content: String!
+  registDate: String!
+  updateDate: String!
+  deleteDate: String!
+}
+
+type Query {
+  articles: [Article!]!
+  replies: [Article!]!
+}
