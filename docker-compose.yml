@@ -6,12 +6,12 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MARIADB_ROOT_PASSWORD: example
+      MARIADB_ROOT_PASSWORD: root
     ports:
       - 3306:3306
   flyway:
     image: flyway/flyway
-    command: -url=jdbc:mysql://mysql -schemas=tmpdb -user=root -password=example -connectRetries=60 migrate
+    command: -url=jdbc:mysql://mysql -schemas=tmpdb -user=root -password=root -connectRetries=60 migrate
     volumes:
       - .:/flyway/sql
     depends_on:
