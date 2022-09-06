@@ -42,6 +42,7 @@ export class Article {
   @Field()
   deleteDate: string;
 
-  @OneToMany(() => Reply, reply => reply.article)
-  replies?: Reply[]
+  @Field((type) => [Reply])
+  @OneToMany((type) => Reply, (replies) => replies.article)
+  replies: Reply[]
 }

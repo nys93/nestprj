@@ -31,10 +31,7 @@ export class Reply {
   @Field()
   registDate: string;
 
-  @ManyToOne(() => Article, article => article.replies)
+  @ManyToOne((type) => Article, (article) => article.replies)
+  @Field((type) => Article)
   article: Article
-
-//   @ManyToOne(() => Article)
-//   @JoinColumn({ name: 'article_id' })
-//   articles: Article[];
 }

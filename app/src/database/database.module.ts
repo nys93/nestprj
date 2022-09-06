@@ -9,7 +9,7 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
     "host": "localhost",
     "port": 3306,
     "username": "root",
-    "password": "example",
+    "password": "root",
     "database": "tmpdb",
     "entities": ["dist/**/entities/*{.ts,.js}"],
     "synchronize": true,
