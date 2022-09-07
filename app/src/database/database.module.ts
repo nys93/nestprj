@@ -7,7 +7,7 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
   imports: [TypeOrmModule.forRoot({
     "type": "mysql",
     "host": "localhost",
-    "port": 3306,
+    "port": 33006,
     "username": "root",
     "password": "root",
     "database": "tmpdb",
