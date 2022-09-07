@@ -8,7 +8,7 @@ services:
     environment:
       MARIADB_ROOT_PASSWORD: root
     ports:
-      - 3306:3306
+      - 33006:3306
   flyway:
     image: flyway/flyway
     command: -url=jdbc:mysql://mysql -schemas=tmpdb -user=root -password=root -connectRetries=60 migrate
@@ -20,4 +20,4 @@ services:
     image: adminer
     restart: always
     ports:
-      - 8080:8080
+      - 8089:8080
