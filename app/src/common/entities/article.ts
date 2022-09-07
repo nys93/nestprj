@@ -7,7 +7,7 @@ import {
   UpdateDateColumn,
   OneToMany,
 } from 'typeorm';
-import { Reply } from './reply';
+// import { Reply } from './reply';
 
 @Entity({ name: 'articles' })
 @ObjectType()
@@ -42,7 +42,5 @@ export class Article {
   @Field()
   deleteDate: string;
 
-  @Field((type) => [Reply])
-  @OneToMany((type) => Reply, (replies) => replies.article)
-  replies: Reply[]
+  // TODO: ARTICLES TABLE's ID is FK FOR REPLIES
 }

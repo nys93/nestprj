@@ -12,7 +12,7 @@ export class ArticlesService {
     
       public async getAllArticles(): Promise<Article[]> {
         const articles: Article[] = await this.aritcleRepository.find({
-          relations: ['replies']
+          // relations: ['replies']
         });
         if (!articles) throw new NotFoundException();
         return articles;

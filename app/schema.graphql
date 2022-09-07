@@ -2,15 +2,6 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type Reply {
-  articleId: Float!
-  id: Float!
-  writer: String!
-  content: String!
-  registDate: String!
-  article: Article!
-}
-
 type Article {
   id: Float!
   writer: String!
@@ -19,10 +10,8 @@ type Article {
   registDate: String!
   updateDate: String!
   deleteDate: String!
-  replies: [Reply!]!
 }
 
 type Query {
   articles: [Article!]!
-  replies: [Reply!]!
 }
